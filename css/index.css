@@ -66,9 +66,105 @@ p {
     line-height: 1.4;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+}
+
+nav a {
+    color: black;
+}
+
+button {
+    font-size: 14px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-left: 25px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    background-color: teal;
+}
+
+.box2 {
+    background-color: gold;
+}
+
+.box3 {
+    background-color: cadetblue;
+}
+
+.box4 {
+    background-color: coral;
+}
+
+.box5 {
+    background-color: crimson;
+}
+
+.box6 {
+    background-color: forestgreen;
+}
+
+.box7 {
+    background-color: darkorchid;
+}
+
+.box8 {
+    background-color: hotpink;
+}
+
+.box9 {
+    background-color: indigo;
+}
+
+.box10 {
+    background-color: dodgerblue;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.logo {
+    float: left;
+	 padding-top: 25px;
+}
+
+.header-img {
+	width: 800px;
+}
+
+.text-img {
+    padding-bottom: 15px;
+}
+
+.header-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    border-bottom: 1px dashed black;
+}
+
+.header-content .text-container {
+     padding: 2% 1%;
+    padding-bottom: 20px;
 }
 
 .top-content {
@@ -76,13 +172,29 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    padding-top: 30px;
+    border-bottom: 1px dashed black; 
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-top: .5%;
+}
+
+.middle-content-about .text-container {
+    width: 48%;
+    padding: 1% 1%;
+    padding-bottom: 20px; 
+    border-bottom: 1px dashed black; 
 }
 
 .middle-content {
@@ -101,10 +213,9 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -120,11 +231,47 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    padding-top: 4%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* Stretch: Design new page - Contact Form CSS */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;   
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  font-size: 15px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.contact-container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 50px 20px 50px;
+}
+
 
 footer {
     width: 100%;
